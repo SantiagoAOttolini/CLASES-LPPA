@@ -1,0 +1,23 @@
+.contenedor {
+  display: flex;
+  /*flex-wrap: wrap; se acomoda depende si se achica la ventana*/
+  flex-direction: column; /*row; row-reverse; clumn-reverse*/
+  width: 500px;
+  height: 500px;
+  background-color: aqua;
+  
+  /*justify-content: center; alinea a los hijos en el eje principal*/
+}
+.item {
+  width: 80px; /*35* los 10 item son 350 --- 500-350=150px que son los pixeles que me quedan disponibles*/
+  border: 1px solid rgb(0, 0, 0);
+  background-color: blue;
+  flex-shrink: 1; /*Es para encojer los item*/
+ /*flex-grow: 1; determina el cremicmiento de cada uno de los items*/
+
+}
+.item:nth-child(5)      /*css relativo, aplicamos css al numero 5*/
+ {
+  flex-shrink: 2;
+  align-self: center; /*se alinea con respecto al eje transversal*/
+}

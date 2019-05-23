@@ -1,0 +1,36 @@
+.content
+{
+display: flex;
+height: 500px;
+flex-direction: row;
+}
+.main
+{
+width: 75%;
+background-color: aquamarine;
+    
+}
+.aside
+{     
+    width: 25%;
+    background-color: blueviolet;
+    order: -1; /*SI lo ponemos en 0 aparece al principio la medioa*/
+}
+@media screen and (max-width: 768px) /*if en css*/  /*lo maximo es 768px, si se supera pasa lo de arriba y si no lo de adentro del @media*/
+{
+    .content
+    {
+    flex-direction: column;
+
+    }
+    .main,.aside
+    {
+    width: 100px;
+    
+    }
+    .aside
+    {
+    order: -1;
+
+    }
+}

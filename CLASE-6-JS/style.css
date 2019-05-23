@@ -1,0 +1,44 @@
+html, body{  /*the come is separator of selectros*/
+width: 100%;
+height: 100%;
+margin: 0;
+padding: 0;
+background-color: #cccccc;
+color: #600;
+}
+
+h1{
+color: #f00;
+font-size: 2rem;/*relative size */
+
+}
+#canvas
+{
+position: relative;
+background-color: #333333;
+height: 40vh;
+padding: 1vh 1vw;
+margin: 1vh 1vw  /*up-right, down-left */
+}
+
+.character
+{
+position: absolute;
+top:0;
+width: 5vw;
+height: 10vh;
+
+}
+
+.player
+{
+left: 0;
+background-color: #0f0;
+}
+
+.enemy
+{
+right: 0;
+background-color: #0000ff;
+
+}
